@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Web Test:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f62a0e8-4f54-4fa4-aeb6-3961942e0e97" name="Changes" comment="ss" />
+    <list default="true" id="5f62a0e8-4f54-4fa4-aeb6-3961942e0e97" name="Changes" comment="ss">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Web_Test_jar/Web Test.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Web_Test_jar/Web Test.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +61,13 @@
   <component name="RunManager">
     <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="Web Test:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Web_Test_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="29e4325e-d0b5-4a82-b596-7b6f26e26e4b" />
         <option name="HTTP_PORT" value="8085" />
@@ -128,6 +143,9 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Web Test:war exploded" />
+        </option>
       </method>
     </configuration>
   </component>
@@ -139,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700677805642</updated>
-      <workItem from="1700677807319" duration="4243000" />
+      <workItem from="1700677807319" duration="6649000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <created>1700677874219</created>
@@ -162,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700683009507</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ss">
+      <created>1700683240786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700683240786</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
