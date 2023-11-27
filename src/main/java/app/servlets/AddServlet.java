@@ -1,7 +1,7 @@
 package app.servlets;
 
-import app.entities.User;
-import app.model.UserList;
+import org.postgresql.Driver;
+import utils.ConnectionManager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,8 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class AddServlet extends HttpServlet {
+
+    private static Connection conn;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
@@ -20,12 +26,26 @@ public class AddServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String name = req.getParameter("name");
-        String password = req.getParameter("group");
+        String group = req.getParameter("group");
         String results = req.getParameter("results");
-        User user = new User(name, password,results);
-        UserList userlist = UserList.getInstance();
-        userlist.add(user);
+
+        try
+        {
+            Connection conn = ConnectionManager.open();
+            Statement stat = conn.createStatement();
+            int result = stat.executeUpdate(String.format("INSERT INTO users(name,\"group\",results) VALUES ('%s','%s','%s')",name,group,results));
+
+        }
+
+        catch (SQLException e)
+        {
+            throw new RuntimeException(e);
+        }
+
     }
+
+
 
 }

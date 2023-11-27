@@ -26,7 +26,7 @@ public class UserList {
 
     public List<String> list() {
         return userlist.stream()
-                .map(User::getName)
+                .map(User::getResults)
                 .collect(Collectors.toList());
     }
 

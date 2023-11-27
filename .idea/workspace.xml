@@ -10,12 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f62a0e8-4f54-4fa4-aeb6-3961942e0e97" name="Changes" comment="ss">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/model/UserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/servlets/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/servlets/AddServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/servlets/ListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/servlets/ListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,24 +63,38 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Web Test\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\Web Test\web" />
       <recent name="C:\Users\user\IdeaProjects\Web Test\web\views" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.83">
+    <configuration name="users.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="58e170ff-aee8-4bb0-b284-795e57229357/database/Web-tests/schema/public/table/users.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -170,6 +184,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.users.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -184,7 +203,9 @@
       <workItem from="1700694523337" duration="374000" />
       <workItem from="1700695109933" duration="1123000" />
       <workItem from="1700731888843" duration="1632000" />
-      <workItem from="1700738664372" duration="3845000" />
+      <workItem from="1700738664372" duration="6187000" />
+      <workItem from="1701106275898" duration="15015000" />
+      <workItem from="1701122016666" duration="5799000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <created>1700677874219</created>
@@ -284,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700695776323</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ss">
+      <created>1700742804744</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700742804745</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
