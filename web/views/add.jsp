@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;meta charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Add-Users</title>
@@ -19,6 +19,10 @@
 
     <button type="submit">Submit</button>
 </form>
+
+<div>
+    <button onclick="location.href='/'">Back to main</button>
+</div>
 
 </body>
 </html>

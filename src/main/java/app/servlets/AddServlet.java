@@ -39,7 +39,7 @@ public class AddServlet extends HttpServlet {
             Connection conn = ConnectionManager.open();
             Statement stat = conn.createStatement();
             //int result = stat.executeUpdate(String.format("SET LANGUAGE 'Russian'"));
-            int result = stat.executeUpdate(String.format("INSERT INTO users(id, name,\"group\",results) VALUES ('%s','%s','%s','%s')",101,name,group,results));
+            int result = stat.executeUpdate(String.format("INSERT INTO users(name,\"group\",results) VALUES ('%s','%s','%s')",name,group,results));
 
         }
 

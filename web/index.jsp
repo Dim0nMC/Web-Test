@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My super project!</title>
+  <title>Web-test</title>
 </head>
 <body>
 <!-- header -->

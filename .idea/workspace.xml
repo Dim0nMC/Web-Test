@@ -12,6 +12,7 @@
     <list default="true" id="5f62a0e8-4f54-4fa4-aeb6-3961942e0e97" name="Changes" comment="ss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/servlets/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/servlets/AddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/views/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/add.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +202,10 @@
       <workItem from="1700731888843" duration="1632000" />
       <workItem from="1700738664372" duration="6187000" />
       <workItem from="1701106275898" duration="15015000" />
-      <workItem from="1701122016666" duration="9985000" />
+      <workItem from="1701122016666" duration="10307000" />
+      <workItem from="1701134167105" duration="423000" />
+      <workItem from="1701134614816" duration="1954000" />
+      <workItem from="1701136685294" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <created>1700677874219</created>
@@ -315,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701129594004</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ss">
+      <created>1701134009643</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701134009643</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,9 +351,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/servlets/AddServlet.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/app/servlets/ListServlet.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
