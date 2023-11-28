@@ -27,6 +27,9 @@ public class AddServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+
         String name = req.getParameter("name");
         String group = req.getParameter("group");
         String results = req.getParameter("results");
@@ -35,7 +38,8 @@ public class AddServlet extends HttpServlet {
         {
             Connection conn = ConnectionManager.open();
             Statement stat = conn.createStatement();
-            int result = stat.executeUpdate(String.format("INSERT INTO users(name,\"group\",results) VALUES ('%s','%s','%s')",name,group,results));
+            //int result = stat.executeUpdate(String.format("SET LANGUAGE 'Russian'"));
+            int result = stat.executeUpdate(String.format("INSERT INTO users(id, name,\"group\",results) VALUES ('%s','%s','%s','%s')",101,name,group,results));
 
         }
 
