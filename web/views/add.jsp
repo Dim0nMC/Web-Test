@@ -4,13 +4,9 @@
     <title>Add-Users</title>
 </head>
 <body>
-<form method="post">
+<form method="post" >
     <label>Name:
         <input type="text" name="name"><br />
-    </label>
-
-    <label>Group:
-        <input type="text" name="group"><br />
     </label>
 
     <label>Results:

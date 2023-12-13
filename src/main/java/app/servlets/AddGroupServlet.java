@@ -15,13 +15,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class AddServlet extends HttpServlet {
+public class AddGroupServlet extends HttpServlet {
 
     private static Connection conn;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/add.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/index.jsp");
         requestDispatcher.forward(req,resp);
     }
 
@@ -31,25 +31,12 @@ public class AddServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
 
-        String name = req.getParameter("name");
-        String group = DataBank.group;
-        String results = req.getParameter("results");
 
-        try
-        {
-            Connection conn = ConnectionManager.open();
-            Statement stat = conn.createStatement();
-            //int result = stat.executeUpdate(String.format("SET LANGUAGE 'Russian'"));
-            int result = stat.executeUpdate(String.format("INSERT INTO users(name,\"group\",results) VALUES ('%s','%s','%s')",name,group,results));
-
-        }
-
-        catch (SQLException e)
-        {
-            throw new RuntimeException(e);
-        }
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/add.jsp");
+        String group = req.getParameter("group");
+        DataBank.group = group;
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/index.jsp");
         requestDispatcher.forward(req,resp);
+        System.out.println(group);
     }
 
 

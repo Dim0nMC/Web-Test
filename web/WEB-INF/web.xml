@@ -5,6 +5,16 @@
          version="4.0">
     <!-- add servlet -->
     <servlet>
+        <servlet-name>group</servlet-name>
+        <servlet-class>app.servlets.AddGroupServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>group</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>add</servlet-name>
         <servlet-class>app.servlets.AddServlet</servlet-class>
     </servlet>
