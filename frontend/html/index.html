@@ -10,7 +10,6 @@
     </head>
     <body>
         <nav class="navbar navbar-light" style="background-color: #bdd9ed">
-            
             <div class="logo">
                 <a href="https://mai.ru/"><img src="https://dev.mai.ru/generic/images/logo/mai-web.svg"></a>
             </div>
@@ -51,24 +50,29 @@
                     Будьте сами собой и отвечайте честно. Это поможет получить наиболее правдивый результат.
                 </p>
             </div>
-
-
             <!-- В action="" подсавить путь к файлу обработчику -->
-            <form action="" target="_self" method="post">
-                <h6>Укажите идентификатор группы</h6>
+            <form action="#" target="_self" method="post">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <button type="submit" class="btn btn-outline-primary">Пройти тест</button>
+                      <span class="input-group-text" id="inputGroup-sizing-default">Укажите идентификатор группы</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                  </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Отправить</button>
             </form>
 
-            <!-- Чтобы раньше времени пользователь не нажимал на резы, видимо нужно выключить кнопку -->
-            <form action="" target="_blank" method="get">
-                <button type="button" class="btn btn-outline-primary">Посмотреть результаты</button>
+            <div class="migration">            
+                <form action="add.html" target="_blank" method="get">
+                    <button type="submit" class="btn btn-outline-primary">Пройти тест</button>
                 <!-- <button type="button" class="btn btn-outline-primary" disabled>Посмотреть результаты</button> -->
-            </form>
+                </form>
+
+                <form action="list.html" target="_blank" method="get">
+                    <button type="submit" class="btn btn-outline-primary">Посмотреть результаты</button>
+                    <!-- <button type="button" class="btn btn-outline-primary" disabled>Посмотреть результаты</button> -->
+                </form>
+            </div>
+
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
