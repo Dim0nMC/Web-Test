@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" 
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/add.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #bdd9ed">
+            
+            <div class="logo">
+                <a href="https://mai.ru/"><img src="https://dev.mai.ru/generic/images/logo/mai-web.svg"></a>
+            </div>
+            <div class="header">
+                <div class="project_name">Психологический тест</div>
+                <div class="authors">by web outsiders</div>
+            </div>
+            <div></div>
+        </nav>
+        <form action="#" method="post" class="container">
+            <h3>ВОПРОСЫ:</h3>
+            <div class="questions">
+                <h5>Блок 1. Какой вклад я могу внести в работу команды:</h5>
+                    <p>1. Я думаю, что способен быстро замечать новые возможности и извлекать из них выгоды.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>2. Я могу успешно работать с самыми разными людьми.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>3. Генерация идей — моё врожденное достоинство. </p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>4. Моим достоинством является умение находить людей, способных принести пользу команде.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>5. Моя способность доводить всё до конца во многом обеспечила мою профессиональную эффективность.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>6. Я готов перенести временную непопулярность, если вижу, что мои действия принесут в конечном счете полезные результаты.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>7. Я быстро выясняю, что сработает в данной ситуации, если в подобную ситуацию я уже попадал.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+                    <p>8. Личные заблуждения и предубеждения не мешают мне находить и доказывать преимущества альтернативных действий.</p>
+                    <input type="range" class="form-range" min="0" max="9" value="0" id="customRange1">
+            </div>
+            
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Введите ваше имя</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Отправить</button>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready (function(){
+                $('[data-toggle="tooltip"]').tooltip ();
+            });
+        </script>
+    </body>
+    
+</html>
